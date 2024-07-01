@@ -36,7 +36,8 @@ return {
 				g = {
 					name = "Git",
 					l = { "<cmd>LazyGit<cr>", "LazyGit" },
-					b = { "<cmd>Gitsigns toggle_current_line_blame<cr>", "Blame Current Line" },
+          b = { "<cmd>BlameToggle<cr>", "Blame File" },
+					c = { "<cmd>Gitsigns toggle_current_line_blame<cr>", "Blame Current Line" },
 				},
 
 				-- Toggle Options
