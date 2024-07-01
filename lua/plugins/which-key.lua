@@ -22,6 +22,17 @@ return {
 					"Vertical Split",
 				},
 
+        -- CopilotChat
+        c = {
+          name = "CopilotChat",
+          c = { "<cmd>CopilotChatToggle<cr>", "Copilot Chat" },
+          d = { "<cmd>CopilotChatFixDiagnostic<cr>", "Fix Diagnostic of current line" },
+          e = { "<cmd>CopilotChatExplain<cr>", "Explain yanked code" },
+          g = { "<cmd>CopilotChatDocs<cr>", "Write documentation comment" },
+          m = { "<cmd>CopilotChatCommit<cr>", "Write commit message" },
+          o = { "<cmd>CopilotOptimize<cr>", "Optimize the cod" },
+        },
+
 				-- Telescope
 				f = {
 					name = "Telescope", -- Group name for Telescope related commands
@@ -45,12 +56,6 @@ return {
 					name = "Toggle Options",
 				},
 
-				-- CopilotChat
-				c = {
-					name = "CopilotChat",
-					e = { "<cmd>CopilotChatExplain<cr>", "Explain yanked code" },
-					d = { "<cmd>CopilotChatFixDiagnostic<cr>", "Fix Diagnostic of current line" },
-				},
 			},
 		})
 	end,
