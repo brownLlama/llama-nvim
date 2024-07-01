@@ -10,11 +10,11 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- Indentation
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set smartindent")
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.opt.autoindent = true
+vim.opt.smartindent = true
 
 -- Select all
 vim.keymap.set("n", "<c-a>", "ggVG<CR>")
@@ -23,8 +23,6 @@ vim.keymap.set("n", "<c-a>", "ggVG<CR>")
 vim.opt.showmode = false
 
 -- Sync clipboard between OS and Neovim.
---  Remove this option if you want your OS clipboard to remain independent.
---  See `:help 'clipboard'`
 vim.opt.clipboard = 'unnamedplus'
 
 -- Backspace
@@ -34,7 +32,7 @@ vim.o.backspace = "indent,eol,start"
 vim.opt.breakindent = true
 
 -- Save undo history
-vim.opt.undofile = true
+-- vim.opt.undofile = true
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
@@ -42,6 +40,7 @@ vim.opt.smartcase = true
 
 -- Keep signcolumn on by default
 vim.opt.termguicolors = true
+vim.opt.background = 'dark'
 vim.opt.signcolumn = 'yes'
 
 -- Decrease update time
