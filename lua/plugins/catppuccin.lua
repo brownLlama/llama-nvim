@@ -1,3 +1,4 @@
+-- Catppuccin Theme
 return {
 	"catppuccin/nvim",
 	lazy = false,

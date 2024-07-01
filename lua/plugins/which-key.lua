@@ -1,3 +1,4 @@
+-- Shows keys, when leader keys is pressed
 return {
 	"folke/which-key.nvim",
 	event = "VeryLazy",

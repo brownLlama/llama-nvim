@@ -1,5 +1,4 @@
--- Disable for now, since there is no way to disable the commit
--- Waiting for the udpate
+-- Git Blame
 return {
 	"FabijanZulj/blame.nvim",
 }

@@ -1,3 +1,4 @@
+-- Git signs in the file
 return {
 	"lewis6991/gitsigns.nvim",
 	config = function()
