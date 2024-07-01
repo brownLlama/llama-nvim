@@ -14,6 +14,8 @@ return {
 				["e"] = { "<cmd>Neotree toggle right<cr>", "Toggle Explorer" },
 				-- Markdown Preview
 				-- ["m"] = { "<cmd>MPOpen<cr>", "Markdown Preview" },
+        -- Close Buffer
+				["x"] = { "<cmd>bw<cr>", "Close Buffer" },
 				-- Vertical Split
 				["v"] = {
 					"<cmd>vsplit<CR><cmd>TmuxNavigateLeft<CR><cmd>BufferLineCyclePrev<CR>",
