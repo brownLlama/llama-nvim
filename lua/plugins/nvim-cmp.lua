@@ -7,7 +7,7 @@ return {
     "hrsh7th/cmp-nvim-lsp", -- source for LSP completions
      -- snippet engine
     {
-      "L3MON4D3/LuaSnip"
+      "L3MON4D3/LuaSnip",
       version = "v2.*",
       build = "make install_jsregex",
     },
