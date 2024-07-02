@@ -13,8 +13,8 @@ return {
 				-- Toggle Explorer
 				["e"] = { "<cmd>Neotree toggle right<cr>", "Toggle Explorer" },
 				-- Markdown Preview
-				-- ["m"] = { "<cmd>MPOpen<cr>", "Markdown Preview" },
-        -- Close Buffer
+				["m"] = { "<cmd>MarkdownPreviewToggle<cr>", "Markdown Preview" },
+				-- Close Buffer
 				["x"] = { "<cmd>bw<cr>", "Close Buffer" },
 				-- Vertical Split
 				["v"] = {
@@ -22,16 +22,16 @@ return {
 					"Vertical Split",
 				},
 
-        -- CopilotChat
-        c = {
-          name = "CopilotChat",
-          c = { "<cmd>CopilotChatToggle<cr>", "Copilot Chat" },
-          d = { "<cmd>CopilotChatFixDiagnostic<cr>", "Fix Diagnostic of current line" },
-          e = { "<cmd>CopilotChatExplain<cr>", "Explain yanked code" },
-          g = { "<cmd>CopilotChatDocs<cr>", "Write documentation comment" },
-          m = { "<cmd>CopilotChatCommit<cr>", "Write commit message" },
-          o = { "<cmd>CopilotOptimize<cr>", "Optimize the cod" },
-        },
+				-- CopilotChat
+				c = {
+					name = "CopilotChat",
+					c = { "<cmd>CopilotChatToggle<cr>", "Copilot Chat" },
+					d = { "<cmd>CopilotChatFixDiagnostic<cr>", "Fix Diagnostic of current line" },
+					e = { "<cmd>CopilotChatExplain<cr>", "Explain yanked code" },
+					g = { "<cmd>CopilotChatDocs<cr>", "Write documentation comment" },
+					m = { "<cmd>CopilotChatCommit<cr>", "Write commit message" },
+					o = { "<cmd>CopilotOptimize<cr>", "Optimize the cod" },
+				},
 
 				-- Telescope
 				f = {
@@ -47,7 +47,7 @@ return {
 				g = {
 					name = "Git",
 					l = { "<cmd>LazyGit<cr>", "LazyGit" },
-          b = { "<cmd>BlameToggle<cr>", "Blame File" },
+					b = { "<cmd>BlameToggle<cr>", "Blame File" },
 					c = { "<cmd>Gitsigns toggle_current_line_blame<cr>", "Blame Current Line" },
 				},
 
@@ -55,7 +55,6 @@ return {
 				t = {
 					name = "Toggle Options",
 				},
-
 			},
 		})
 	end,
