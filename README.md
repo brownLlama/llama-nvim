@@ -1,1 +1,1 @@
-# llama-nvim
+# Brown Llama Nvim

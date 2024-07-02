@@ -13,6 +13,6 @@ in visual mode yd pressed in timeoutlen will cut. While just y will yank as usua
 --]]
 
 return {
-  "tenxsoydev/karen-yank.nvim",
-  config = true,
+	"tenxsoydev/karen-yank.nvim",
+	config = true,
 }

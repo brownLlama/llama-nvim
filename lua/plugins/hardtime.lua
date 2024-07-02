@@ -1,3 +1,4 @@
+-- Avoiding use of mouse
 return {
 	"m4xshen/hardtime.nvim",
 	event = "BufEnter",

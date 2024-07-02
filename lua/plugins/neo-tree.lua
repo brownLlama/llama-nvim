@@ -9,14 +9,14 @@ return {
 	},
 	config = function()
 		require("neo-tree").setup({
-			close_if_last_window = true,
+			close_if_last_window = true, -- Close Neo-tree if it is the last window left in the tab
 			filesystem = {
 				filtered_items = {
 					visible = true,
 				},
-        follow_current_file = {
-          enabled = true
-        }
+				follow_current_file = {
+					enabled = true,
+				},
 			},
 			event_handlers = {
 				{
@@ -29,7 +29,7 @@ return {
 			source_selector = {
 				winbar = false,
 				statusline = false,
-      },
+			},
 		})
 	end,
 }
