@@ -19,6 +19,9 @@ vim.opt.smartindent = true
 -- Select all
 vim.keymap.set("n", "<c-a>", "ggVG<CR>")
 
+-- Fine cmdline
+vim.keymap.set("n", ":", "<cmd>FineCmdline<CR>", { noremap = true })
+
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
 
