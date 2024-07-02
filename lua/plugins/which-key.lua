@@ -30,7 +30,7 @@ return {
 					e = { "<cmd>CopilotChatExplain<cr>", "Explain yanked code" },
 					g = { "<cmd>CopilotChatDocs<cr>", "Write documentation comment" },
 					m = { "<cmd>CopilotChatCommit<cr>", "Write commit message" },
-					o = { "<cmd>CopilotOptimize<cr>", "Optimize the cod" },
+					o = { "<cmd>CopilotOptimize<cr>", "Optimize the code" },
 				},
 
 				-- Telescope
