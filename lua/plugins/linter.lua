@@ -1,6 +1,5 @@
 return {
 	"mfussenegger/nvim-lint",
-	lazy = true,
 	event = { "BufReadPre", "BufNewFile" }, -- to disable, comment this out
 	config = function()
 		local lint = require("lint")
@@ -11,15 +10,15 @@ return {
 			json = { "jsonlint" },
 			lua = { "selene" },
 			markdown = { "markdownlint" },
-			python = { "ruff", "pydocstyle" },
-      sql = { "sqlfluff" },
+			python = { "ruff", "pydocstyle", "mypy" },
+			sql = { "sqlfluff" },
 			terraform = { "tflint" },
 			yaml = { "yamllint" },
 		}
 
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
 
-		vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
+		vim.api.nvim_create_autocmd({ "BufReadPost", "BufWritePost", "InsertLeave" }, {
 			group = lint_augroup,
 			callback = function()
 				lint.try_lint()

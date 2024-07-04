@@ -35,6 +35,7 @@ return {
 				"jsonls", -- json
 				"lua_ls", -- lua
 				"marksman", -- markdown
+				"pyright", -- python
 				"ruff", -- python
 				"sqlls", -- sql
 				"taplo", -- toml
@@ -46,27 +47,28 @@ return {
 		})
 
 		mason_tool_installer.setup({
-      -- List of Linters and Formatters for mason to install
+			-- List of Linters and Formatters for mason to install
 			ensure_installed = {
-        -- Linters
+				-- Linters
 				"shellcheck", -- bash
-        "hadolint", -- Dockerfile
-        "jsonlint", -- json
-        "selene", -- lua
-        "markdownlint", -- markdown
-        "pydocstyle", -- python
-        "sqlfluff", -- sql
-        "tflint", -- terraform
-        "yamllint", -- yaml
+				"hadolint", -- Dockerfile
+				"jsonlint", -- json
+				"selene", -- lua
+				"markdownlint", -- markdown
+				"mypy", -- python
+				"pydocstyle", -- python
+				"sqlfluff", -- sql
+				"tflint", -- terraform
+				"yamllint", -- yaml
 
-        -- Formatters
-        "beautysh", -- bash
-        "prettierd", --graphql
-        "prettier", -- json, markdown, yaml
-        "stylua", -- lua
-        "black", -- python
-        "isort", -- python
-        "sqlfmt", -- sql
+				-- Formatters
+				"beautysh", -- bash
+				"prettierd", --graphql
+				"prettier", -- json, markdown, yaml
+				"stylua", -- lua
+				"black", -- python
+				"isort", -- python
+				"sqlfmt", -- sql
 			},
 		})
 	end,
