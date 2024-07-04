@@ -7,13 +7,14 @@ return {
 
 		conform.setup({
 			formatters_by_ft = {
-				bash = { "shfmt", "beautysh" },
-				graphql = { "prettier" },
+				bash = { "beautysh" },
+				graphql = { "prettierd" },
 				json = { "prettier" },
 				lua = { "stylua" },
 				markdown = { "prettier" },
 				python = { "ruff", "isort", "black" },
-				yaml = { "prettier", "yamlfix" },
+        sql = { "sqlfmt" },
+				yaml = { "prettier" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
